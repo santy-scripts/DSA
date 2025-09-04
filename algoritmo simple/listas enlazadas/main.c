@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 //definicion de la estructura del nodo
 struct Node
 {
@@ -21,7 +20,7 @@ struct Node* createNode(int value)
         printf("Memory allocator failed");
         exit(1);
     }
-    
+
     newNode->data = value; //asignar el valor (value) al campo data de la estructura Node
     newNode->next = NULL; //asignar valor null al puntero del siguiente nodo
 
