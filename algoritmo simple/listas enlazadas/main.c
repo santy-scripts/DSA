@@ -1,11 +1,32 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-typedef struct link{
 
-    int datos;
-    struct nodo; //la estructura usa recursividad
+//definicion de la estructura del nodo
+struct Node
+{
+    int data; // Valor almacenado en el nodo 
+    struct Node* next; //puntero al siguiente nodo
+};
 
-}link;
+//operacion basica para crear un nodo
+struct Node* createNode(int value)
+{
 
-struct lista *l; /* declaración */
-l = NULL; /* inicialización */
+    //asignar memoria para crear un nuevo nodo
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+
+    if (newNode == NULL)
+    {   
+        printf("Memory allocator failed");
+        exit(1);
+    }
+    
+    newNode->data = value; //asignar el valor (value) al campo data de la estructura Node
+    newNode->next = NULL; //asignar valor null al puntero del siguiente nodo
+
+    //retorna el puntero del nuevo nodo creado
+    return newNode;
+
+};
+
