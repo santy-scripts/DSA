@@ -132,7 +132,7 @@ Esta checklist sirve para llevar un seguimiento de las tareas completadas y pend
 ## 🏗️ Estructuras de Datos
 
 ### Listas Enlazadas
-- [ ] Lista enlazada simple
+- [X] Lista enlazada simple
   - [ ] Apuntes teóricos
   - [ ] Implementación en C
   - [ ] Ejemplo práctico
