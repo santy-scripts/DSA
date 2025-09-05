@@ -29,3 +29,17 @@ struct Node* createNode(int value)
 
 };
 
+int main()
+{
+    struct Node* node = createNode(42);
+
+    // Verificar que el nodo se creó correctamente imprimiendo su valor
+    printf("Nodo creado con valor: %d\n", node->data);
+
+    // Liberar la memoria asignada al nodo
+    free(node);
+
+    return 0;
+}
+
+
