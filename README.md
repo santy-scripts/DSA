@@ -133,16 +133,16 @@ Esta checklist sirve para llevar un seguimiento de las tareas completadas y pend
 
 ### Listas Enlazadas
 - [X] Lista enlazada simple
-  - [ ] Apuntes teóricos
-  - [ ] Implementación en C
-  - [ ] Ejemplo práctico
-- [ ] Lista enlazada doble
-  - [ ] Apuntes teóricos
-  - [ ] Implementación en C
-  - [ ] Ejemplo práctico
-- [ ] Lista enlazada circular
-  - [ ] Apuntes teóricos
-  - [ ] Implementación en C
+  - [x] Apuntes teóricos
+  - [x] Implementación en C
+  - [x] Ejemplo práctico
+- [x] Lista enlazada doble
+  - [x] Apuntes teóricos
+  - [x] Implementación en C
+  - [x] Ejemplo práctico
+- [x] Lista enlazada circular
+  - [x] Apuntes teóricos
+  - [x] Implementación en C
   - [ ] Análisis de complejidad
 
 ### Pilas (Stacks)
