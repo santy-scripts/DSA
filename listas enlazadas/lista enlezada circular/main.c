@@ -58,7 +58,6 @@ void headNode(List* list, int value)
 }
 
 
-
 //funcion para recorrer lista circular
 void travelList(List* list)
 {
@@ -96,22 +95,16 @@ void travelList(List* list)
     }
 }
 
-int main()
+void main()
 {
     List list = {NULL}; // Inicializar la lista
 
     // Añadir nodos al inicio
     headNode(&list, 10);
-    headNode(&list, 20);
-    headNode(&list, 30);
 
     // Recorrer la lista
     printf("Lista circular: ");
     travelList(&list);
 
-    // Liberar memoria
-    freeList(&list);
-
-    return 0;
 
 }
