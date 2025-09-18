@@ -124,10 +124,7 @@ Esta checklist sirve para llevar un seguimiento de las tareas completadas y pend
 - [X] Crear el repositorio en GitHub.
 - [X] Configurar la estructura inicial de carpetas (`estructuras_datos/`, `algoritmos/`, `ejemplos/`).
 - [X] Escribir y subir el archivo `README.md` con la descripción del proyecto.
-- [ ] Crear el archivo `recursos.md` con enlaces a recursos externos.
-- [ ] Crear el archivo `CODE_OF_CONDUCT.md` (opcional).
-- [ ] Añadir un archivo `LICENSE` (ej. Licencia MIT).
-- [ ] Configurar `.gitignore` para excluir archivos innecesarios (ej. archivos compilados de C como `*.o` o ejecutables).
+- [x] Crear el archivo `recursos.md` con enlaces a recursos externos.
 
 ## 🏗️ Estructuras de Datos
 
