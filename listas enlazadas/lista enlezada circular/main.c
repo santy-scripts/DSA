@@ -38,7 +38,7 @@ struct Node* crearNodo(int value)
 //añadir al inicio
 void headNode(List* list, int value)
 {
-    struct Node* newNode = crearNodo(value);
+    struct Node* newNode = crearNodo(value); //primero se crea un nodo utilizando la funcion anterior
 
     if(list->head == NULL) //si el puntero al inicio esta vacio entonces
     {

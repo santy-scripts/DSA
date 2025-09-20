@@ -7,12 +7,12 @@ typedef struct Node
     int data; // Valor almacenado en el nodo 
     struct Node* next; //puntero al siguiente nodo
     struct Node* prev; //puntero al anterior nodo
-}Node;
+} Node;
 
 typedef struct Lista
 {
     Node* head; //puntero al primero nodo
-}Lista; //apodo de la estructura
+} Lista;
 
 
 //operacion basica para crear un nodo
@@ -39,35 +39,37 @@ struct Node* createNode(int value)
 };
 
 //inserción de nodo al inicio
-struct Node* headNode(Lista* list) //se le pasa como parametro tambien el struct de lista
+Node* headNode(Lista* list, int value) //se le pasa como parametro tambien el struct de lista
 {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node)); //de nuevo se crea un espacio en memoria para crear el nodo
+    Node* newNode = createNode(value); //de nuevo se crea un espacio en memoria para crear el nodo
 
-    if(list->head == newNode) //si el puntero head es el primer nodo entonces
+    if(list->head == NULL) //si la lista está vacía
     {
         newNode->next = NULL; //iniciar en nulo
         newNode->prev = NULL; //iniciar en nulo
     }else{ //si no es el primer nodo
-        newNode->next = list->head; 
-        list->head->prev = newNode;
+        newNode->next = list->head; // el nuevo nodo debe apuntar al nodo que antes era la cabeza
+        list->head->prev = newNode; // el antiguo head ahora debe apuntar hacia atrás al nuevo nodo
     } 
 
+    list->head = newNode; //actualizar el head de la lista
 
     return newNode;
 }
 
-
-int main()
+void main()
 {
-    struct Node* node = createNode(42);
+    Lista list;
+    list.head = NULL; //iniciar la lista en null
+
+    //añadir nodos al inicio
+    headNode(&list, 42);
 
     // Verificar que el nodo se creó correctamente imprimiendo su valor
-    printf("Nodo creado con valor: %d\n", node->data);
+    printf("Nodo creado con valor: %d\n", list.head->data);
 
-    // Liberar la memoria asignada al nodo
-    free(node);
-
-    return 0;
 }
+
+
 
 
