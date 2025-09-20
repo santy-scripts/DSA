@@ -14,7 +14,7 @@ Este repositorio contiene:
 - **Recursos adicionales**: Enlaces a material útil, como libros, videos o artículos relacionados con DSA.
 
 ### Estructuras de datos incluidas (o por incluir):
-- Listas enlazadas (sencillas, dobles, circulares)
+- Listas enlazadas (sencillas, dobles, circularesm doblemente enlazadas)
 - Pilas (Stacks)
 - Colas (Queues)
 - Árboles (binarios, BST, AVL, etc.)
